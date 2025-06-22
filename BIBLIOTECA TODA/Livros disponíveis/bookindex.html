@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros de Saúde Mental Masculina</title>
+    <link rel="stylesheet" href="bookstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="bookindex.html" class="nav-link">Livros</a></li>
+                <li><a href="contato.html" class="nav-link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Livros sobre Saúde Mental Masculina</h1>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar livros...">
+            <button id="search-btn">Buscar</button>
+        </div>
+        
+        <div class="filter-container">
+            <select id="category-filter">
+                <option value="all">Todas Categorias</option>
+                <option value="Autoajuda">Autoajuda</option>
+                <option value="Relacionamentos">Relacionamentos</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal</option>
+                <option value="Saúde Mental">Saúde Mental</option>
+            </select>
+        </div>
+        
+        <div class="book-grid" id="book-container">
+            <!-- Livro 1 -->
+            <div class="book-item" data-id="1" data-category="Relacionamentos" 
+                 data-title="Homens são de Marte, Mulheres são de Vênus" data-author="John Gray">
+                <a href="sinopse.html?book=1">
+                    <img src="https://m.media-amazon.com/images/I/712ybwJH-XL._SL1500_.jpg" 
+                         alt="Capa do livro Homens são de Marte...">
+                </a>
+                <div class="book-info">
+                    <h3>John Gray</h3>
+                    <p>Relacionamentos</p>
+                </div>
+            </div>
+            
+            <!-- Livro 2 -->
+            <div class="book-item" data-id="2" data-category="Autoajuda" 
+                 data-title="A Coragem de Ser Imperfeito" data-author="Brené Brown">
+                <a href="sinopse.html?book=2">
+                    <img src="https://m.media-amazon.com/images/I/61rRRbfINJL._SL1006_.jpg" 
+                         alt="Capa do livro A Coragem de Ser Imperfeito">
+                </a>
+                <div class="book-info">
+                    <h3>Brené Brown</h3>
+                    <p>Autoajuda</p>
+                </div>
+            </div>
+            
+            <!-- Livro 3 -->
+            <div class="book-item" data-id="3" data-category="Desenvolvimento Pessoal" 
+                 data-title="O Poder do Agora" data-author="Eckhart Tolle">
+                <a href="sinopse.html?book=3">
+                    <img src="https://m.media-amazon.com/images/I/71sh8JtiZbL._SY466_.jpg" 
+                         alt="Capa do livro O Poder do Agora">
+                </a>
+                <div class="book-info">
+                    <h3>Eckhart Tolle</h3>
+                    <p>Desenvolvimento Pessoal</p>
+                </div>
+            </div>
+            
+            <!-- Livro 4 -->
+            <div class="book-item" data-id="4" data-category="Saúde Mental" 
+                 data-title="Ansiedade - Como Enfrentar o Mal do Século" data-author="Augusto Cury">
+                <a href="sinopse.html?book=4">
+                    <img src="https://m.media-amazon.com/images/I/51MZJMQhzIL.jpg" 
+                         alt="Capa do livro Ansiedade - Como Enfrentar o Mal do Século para ter filhos e alunos">
+                </a>
+                <div class="book-info">
+                    <h3>Augusto Cury</h3>
+                    <p>Saúde Mental</p>
+                </div>
+            </div>
+            
+            <!-- Livro 5 -->
+            <div class="book-item" data-id="5" data-category="Psicologia" 
+                 data-title="O Homem em Busca de Sentido" data-author="Viktor Frankl">
+                <a href="sinopse.html?book=5">
+                    <img src="https://m.media-amazon.com/images/I/51c+CkGCk7L.jpg" 
+                         alt="Capa do livro O Homem em Busca de Sentido">
+                </a>
+                <div class="book-info">
+                    <h3>Viktor Frankl</h3>
+                    <p>Psicologia</p>
+                </div>
+            </div>
+            
+            <!-- Livro 6 -->
+            <div class="book-item" data-id="6" data-category="Desenvolvimento Pessoal" 
+                 data-title="Mindset: A Nova Psicologia do Sucesso" data-author="Carol Dweck">
+                <a href="sinopse5.html?book=6">
+                    <img src="https://m.media-amazon.com/images/I/71Ils+Co9fL._SL1500_.jpg" 
+                         alt="Capa do livro Mindset: A Nova Psicologia do Sucesso">
+                </a>
+                <div class="book-info">
+                    <h3>Carol Dweck</h3>
+                    <p>Desenvolvimento Pessoal</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Livros de Saúde Mental Masculina. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="bookscripts.js"></script>
+</body>
+</html>

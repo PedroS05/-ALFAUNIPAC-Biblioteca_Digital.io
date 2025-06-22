@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Biblioteca de Saúde Mental</title>
+    <link rel="stylesheet" href="contatostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-brain"></i> Biblioteca de Saúde Mental Masculina</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:3000/index.html">Início</a></li>
+                    <li><a href="http://127.0.0.1:3000/bookindex.html">Livros</a></li>
+                    <li><a href="http://127.0.0.1:3000/contato.html" class="active">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-tile">Fale Conosco</h2>
+        
+        <form id="formContato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome completo">
+                <span class="erro" id="erroNome"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+                <span class="erro" id="erroEmail"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo">Motivo do contato:</label>
+                <select id="motivo">
+                    <option value="">Selecione...</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="critica">Crítica</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <span class="erro" id="erroMotivo"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <span class="erro" id="erroMensagem"></span>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Precisa de ajuda profissional? Ligue para <strong>188</strong> (CVV)</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i> @dralaisrubinatto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contatoscript.js"></script>
+</body>
+</html>

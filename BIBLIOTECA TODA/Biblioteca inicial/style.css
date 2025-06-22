@@ -1,0 +1,211 @@
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Layout centralizado */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    width: 100%;
+    flex: 1;
+    padding: 20px 0;
+}
+
+/* Seção de boas-vindas */
+.boas-vindas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-boas-vindas {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.texto-boas-vindas h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.texto-boas-vindas p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.foto-biblioteca {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+.foto-biblioteca img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.foto-biblioteca img:hover {
+    transform: scale(1.03);
+}
+
+/* Seção missão */
+.missao {
+    background-color: #e8f4f8;
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin: 3rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.missao h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.missao p {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Carrossel de livros */
+.carrossel-livros {
+    margin: 4rem auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.carrossel-livros h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.carrossel-btn:hover {
+    background-color: #1a252f;
+    transform: scale(1.1);
+}
+
+.carrossel-btn.anterior {
+    left: 10px;
+}
+
+.carrossel-btn.proximo {
+    right: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.rodape p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
